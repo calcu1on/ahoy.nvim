@@ -11,7 +11,7 @@ This setup will map `<leader>sf` to the save_file function.
 
 ```lua
 return {
-  "dan612/ahoy.nvim",
+  "calcu1on/ahoy.nvim",
   config = function()
     local ahoy = require("ahoy")
     vim.keymap.set('n', '<leader>sf', function() ahoy.save_file() end)

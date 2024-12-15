@@ -29,11 +29,17 @@ M.save_file = function()
     local dest_filename = string.gsub(filename, ".md", ".pdf")
     local destination = config.dest_dir .. dest_filename
     -- using pandoc for a start, eventually would like custom renderers
-    local command = "pandoc -i " .. path .. " -o " .. destination;
+    local command = "pandoc -i " .. path .. " -o " .. destination
     os.execute(command)
     print("File saved to " .. destination)
   end
 end
+
+-- M.setup = function(opts)
+--   if (opts.dest_dir) then
+--     M.config.dest_dir = opts.dest_dir
+--   end
+-- end
 
 return M
 
