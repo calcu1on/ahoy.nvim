@@ -20,8 +20,10 @@ return {
 ```
 --- 
 # To Do
+- [ ] Make more general purpose instesd of PDF only
 - [ ] Create renderer to avoid need of pandoc
 - [ ] Add tests
 - [ ] Create configurable `Notes` path
   - [ ] This should also handle creating the directory gracefully
-- [ ] Error message if `pandoc` is nt available
+- [ ] Error message if `pandoc` is not available
+- [ ] Determine styling options
